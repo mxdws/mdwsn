@@ -1,0 +1,25 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="title" content="{{ title }}">
+  <meta name="description" content="{{ description }}">
+  {%- if siteConfig.ga -%}
+    {%- include google-analytics.html -%}
+  {%- endif -%}
+  <!-- Social Cards -->
+  <meta property="og:title" content="{{ siteConfig.title }}" />
+  <meta property="og:description" content="{{ description }}" />
+  <meta property="og:url" content="{{ siteConfig.url }}" />
+  <meta property="og:image" content="{{ siteConfig.url }}/assets/pssocial.jpg" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="{{ siteConfig.social.twitter }}">
+  <!-- Favicons -->
+  {%- include favicons.html -%}
+  <link rel=“canonical” href=“{{ siteConfig.url }}” />
+  <link href="https://fonts.googleapis.com/css?family=Lato|Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <title>{{ title }}</title>
+</head>
+

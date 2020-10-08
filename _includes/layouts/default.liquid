@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {%- include head.html -%}
+  <body>
+    <script>
+      document.body.className = 'fade';
+    </script>
+    <div class="max-w-2xl mx-auto px-3">
+        {{ content }}
+
+    </div>
+    {% comment %} {%- include footer.html -%} {% endcomment %}
+    <script>
+      document.addEventListener("DOMContentLoaded", function(e) {
+      document.body.className = '';
+      });
+    </script>
+  </body>
+</html>

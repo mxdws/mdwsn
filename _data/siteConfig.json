@@ -1,0 +1,13 @@
+{
+    "title": "Martin Dawson | Personal Website",
+    "subtitle": "Martin Dawson is a Developer who can make websites out of HTML, CSS and Javascript. He also uses Python to automate his workflow and harvest data for analysis.",
+    "url": "https://www.mdwsn.com",
+    "ga": "UA-139155138-8",
+    "social": {
+      "twitter": "@mdaws100"
+      },
+    "author": {
+        "name": "Martin Dawson",
+        "email": "hello@mdwsn.com"
+      }
+}

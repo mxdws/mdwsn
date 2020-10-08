@@ -1,0 +1,21 @@
+<header>
+    <div class="pt-16 pb-2 my-3">
+      {% if page.data.layout == "layouts/home.liquid" %}
+      <h1 class="text-4xl font-bold">Welcome to <a class="text-red-500 hover:underline" href="#">Pretty Static</a></h1>
+      {% if page.data.subtitle %}
+      <p class="font-light">{{ page.data.subtitle }}</p>    
+      {% endif %}
+      {% elsif page.data.layout == "layouts/post.liquid" %}
+      <h1 class="text-4xl font-bold">{{ post.data.title }}</h1>
+      {% if post.data.excerpt %}
+      <p class="font-light">{{ post.data.excerpt }}</p>    
+      {% endif %}
+      {% else %}
+      <h1 class="text-4xl font-bold">{{ page.data.title }}</h1>
+      {% if page.data.subtitle %}
+      <p class="font-light">{{ page.data.subtitle }}</p>    
+      {% endif %}
+      {% endif %}
+      {%- include nav.html -%}
+    </div>
+  </header>  

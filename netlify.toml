@@ -1,3 +1,5 @@
+# Netlify instructions for my site
+
 [build]
-  command = "npm run production"
-  publish = "dist"
+  publish = "_site"
+  command = "eleventy"
